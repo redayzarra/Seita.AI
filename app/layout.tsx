@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Gloock } from "next/font/google";
+import NavBar from "./NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="forest">
-      <body className={gloock.variable}>{children}</body>
+      <body className={gloock.variable}>
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }
