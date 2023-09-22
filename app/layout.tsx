@@ -2,13 +2,19 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Gloock } from "next/font/google";
 import NavBar from "./NavBar";
+import localFont from "next/font/local";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const gloock = Gloock({
+export const gloock = Gloock({
   subsets: ["latin"],
   weight: ["400"],
-  variable: "--font-gloock",
+  variable: "--font-gloock"
+});
+
+const poppins = localFont({
+  src: "../public/fonts/poppins.woff2",
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="forest">
-      <body className={gloock.variable}>
+      <body className={`${poppins.className} ${gloock.variable}`}>
         <NavBar />
         {children}
       </body>
