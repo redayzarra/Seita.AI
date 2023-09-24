@@ -3,7 +3,7 @@ import SubmitButton from "./SubmitButton";
 
 const DemoPage = () => {
   return (
-    <form action="">
+    <form onSubmit={() => null}>
       <div className="mb-3">
         <label htmlFor="IG_Username" className="form-label">
           Instagram Username:{" "}
