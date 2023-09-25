@@ -1,10 +1,9 @@
-import Image from "next/image";
-import NavBar from "./NavBar";
+import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div>
-      Home Page
-    </div>
-  );
+    <main>
+      <h1>Hello World</h1>
+    </main>
+  )
 }
