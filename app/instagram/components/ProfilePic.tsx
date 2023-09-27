@@ -6,7 +6,7 @@ const ProfilePic = () => {
   const userName = "ReDay";
 
   return (
-    <div className="relative w-20 h-20 overflow-hidden rounded-full">
+    <div className="relative w-24 h-24 overflow-hidden rounded-full">
       <Image
         src={SteveRodgers}
         alt={`${userName}'s Instagram profile picture`}
