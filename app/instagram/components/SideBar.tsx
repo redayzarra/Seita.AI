@@ -1,14 +1,14 @@
 import Image from "next/image";
 import React from "react";
-import Avatar from "./Avatar";
+import ProfilePic from "./ProfilePic";
 
 const SideBar = () => {
   return (
-    <div>
-      <Avatar />
-      <div className="flex flex-col items-center justify-center mt-4">
-        <h1 className="text-2xl font-semibold">ReDay</h1>
-        <h2 className="text-sm text-gray-500">Welcome to my Instagram</h2>
+    <div className="h-screen grid grid-cols-5 gap-4">
+      <div className="col-span-1 bg-gray-200">Sidebar</div>
+      <div className="col-span-4">
+        <div className="h-16 bg-gray-300">Navbar</div>
+        <div className="bg-gray-100 overflow-y-auto">Main</div>
       </div>
     </div>
   );

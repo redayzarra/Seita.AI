@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import SteveRodgers from "@/public/images/SteveRodgers.jpg";
 
-const Avatar = () => {
+const ProfilePic = () => {
   const userName = "ReDay";
 
   return (
@@ -17,4 +17,4 @@ const Avatar = () => {
   );
 };
 
-export default Avatar;
+export default ProfilePic;
