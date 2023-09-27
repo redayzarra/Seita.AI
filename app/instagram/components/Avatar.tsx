@@ -1,16 +1,17 @@
 import Image from "next/image";
 import React from "react";
+import SteveRodgers from "@/public/images/SteveRodgers.jpg";
 
 const Avatar = () => {
   const userName = "ReDay";
 
   return (
-    <div>
+    <div className="relative w-20 h-20 overflow-hidden rounded-full">
       <Image
-        src="../../public/SteveRodgers.jpg"
+        src={SteveRodgers}
         alt={`${userName}'s Instagram profile picture`}
-        width={20}
-        height={20}
+        layout="fill"
+        objectFit="cover"
       />
     </div>
   );
