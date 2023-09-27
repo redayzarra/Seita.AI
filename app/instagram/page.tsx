@@ -3,8 +3,14 @@ import SideBar from "./components/SideBar";
 
 const InstagramPage = () => {
   return (
-    <div>
-      <SideBar />
+    <div className="h-screen flex">
+      <div className="w-64 bg-gray-200">
+        <SideBar />
+      </div>
+      <div className="flex flex-col flex-grow">
+        <div className="h-16 bg-gray-300">Navbar</div>
+        <div className="flex-grow bg-gray-100 overflow-y-auto">Main</div>
+      </div>
     </div>
   );
 };
