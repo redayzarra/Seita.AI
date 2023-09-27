@@ -7,7 +7,7 @@ const Heading = () => {
   const userAccount = "@capamerica";
 
   return (
-    <div className="flex justify-between items-center mt-5 ml-2 -mr-5">
+    <div className="flex justify-between items-center mt-5 ml-2 -mr-8">
       <div className="flex flex-col justify-between flex-grow">
         <Logo />
         <h2 className="text-md mt-4">{userName}</h2>

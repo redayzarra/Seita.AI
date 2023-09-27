@@ -4,7 +4,7 @@ import Heading from "./Heading";
 const SideBar = () => {
   return (
     <>
-    <Heading />
+      <Heading />
     </>
   );
 };
