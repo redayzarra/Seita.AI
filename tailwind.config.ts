@@ -17,8 +17,8 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       boxShadow: {
-        dark: "0 12px 35px 0px rgba(0, 0, 0, 0.5)", // Adjust color and opacity as needed
-        pic: "10px 0px 35px 0px rgba(0, 0, 0, 0.5)",
+        bar: "0px 0px 50px 0px rgba(0, 0, 0, 0.5)",
+        pic: "10px 0px 35px 0px rgba(0, 0, 0, 0.75)",
         logo: "0px 0px 35px 0px rgba(250, 200, 80, 0.25)",
       },
     },

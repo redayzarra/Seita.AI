@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Gloock } from "next/font/google";
+import { Inter, Gloock, Poppins } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -8,6 +8,11 @@ const gloock = Gloock({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-gloock",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -22,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="mytheme">
-      <body className={inter.className && gloock.variable}>{children}</body>
+      <body className={poppins.className && gloock.variable}>{children}</body>
     </html>
   );
 }

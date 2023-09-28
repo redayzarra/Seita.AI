@@ -9,11 +9,11 @@ const Heading = () => {
 
   return (
     <div className="flex justify-between items-center -mr-8">
-      <div className="flex flex-col justify-between flex-grow">
+      <div className="flex flex-col justify-between flex-grow text-slate-300">
         <h2 className="text-lg font-bold">{name}</h2>
         <Link
           href={`https://www.instagram.com/${userAccount}/`}
-          className="text-sm text-gray-600"
+          className="text-sm text-slate-400"
         >
           @{userAccount}
         </Link>

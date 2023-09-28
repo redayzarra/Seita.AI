@@ -5,11 +5,11 @@ import SeitaLogo from "@/public/images/SeitaLogo.png";
 
 const Logo = () => {
   return (
-    <Link href="/">
-      <div className="flex items-center justify-center flex-grow">
+    <div className="flex items-center justify-center flex-grow">
+      <Link href="/">
         <Image src={SeitaLogo} alt="Seita company logo" width={100} />
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 
