@@ -1,7 +1,12 @@
+import Link from "next/link";
 import React from "react";
 
 const Logo = () => {
-  return <h1 className="text-3xl font-gloock">Seita</h1>;
+  return (
+    <Link href="/" className="text-3xl font-gloock">
+      Seita
+    </Link>
+  );
 };
 
 export default Logo;

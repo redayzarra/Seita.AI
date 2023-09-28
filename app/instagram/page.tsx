@@ -3,7 +3,7 @@ import SideBar from "./components/SideBar";
 
 const InstagramPage = () => {
   return (
-    <div className="h-screen flex">
+    <div className="h-screen flex drawer lg:drawer-open">
       <div className="w-56 bg-gray-200 shadow-dark z-10">
         <SideBar />
       </div>
