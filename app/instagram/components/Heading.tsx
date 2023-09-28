@@ -8,7 +8,7 @@ const Heading = () => {
   const userAccount = "captainamerica";
 
   return (
-    <div className="flex justify-between items-center -mr-8">
+    <div className="flex justify-between items-center -mr-8 space-x-2">
       <div className="flex flex-col justify-between flex-grow text-slate-300">
         <h2 className="text-lg font-bold">{name}</h2>
         <Link

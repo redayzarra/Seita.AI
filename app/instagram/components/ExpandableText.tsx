@@ -20,12 +20,9 @@ const ExpandableText = ({ children, maxChars }: Props) => {
   return (
     <p>
       {summary}
-      <button
-        className="btn btn-xs btn-ghost"
-        onClick={() => setExpanded(!expanded)}
-      >
-        {expanded ? "Show less" : "Read more"}
-      </button>
+      <div className="tooltip" data-tip="hello">
+        <button className="btn">Hover me</button>
+      </div>
     </p>
   );
 };

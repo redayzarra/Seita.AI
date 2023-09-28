@@ -5,7 +5,7 @@ import Logo from "./Logo";
 
 const SideBar = () => {
   return (
-    <div className="mt-3">
+    <div className="mt-3 min-w-[225px]">
       <Logo />
       <div className="ml-3 mb-1">
         <Heading />
