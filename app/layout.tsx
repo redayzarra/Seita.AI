@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="mytheme">
       <body className={inter.className && gloock.variable}>{children}</body>
     </html>
   );

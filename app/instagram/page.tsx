@@ -1,5 +1,7 @@
 import React from "react";
 import SideBar from "./components/SideBar";
+import WelcomeCard from "./components/WelcomeCard";
+import Body from "./components/Body";
 
 const InstagramPage = () => {
   return (
@@ -9,7 +11,9 @@ const InstagramPage = () => {
       </div>
       <div className="flex flex-col flex-grow">
         <div className="h-16 bg-gray-300">Navbar</div>
-        <div className="flex-grow bg-gray-100 overflow-y-auto">Main</div>
+        <div className="flex-grow bg-gray-100 overflow-y-auto">
+          <Body />
+        </div>
       </div>
     </div>
   );
