@@ -7,7 +7,7 @@ const ProfilePic = () => {
 
   return (
     <div className="">
-      <div className="avatar online inline-block relative w-28 h-w-28 border-8 border-gray-200 rounded-full">
+      <div className="avatar online inline-block relative w-28 h-w-28 border-8 border-neutral rounded-full">
         <div className="relative w-full h-full overflow-hidden shadow-pic rounded-full">
           <Image
             src={SteveRodgers}

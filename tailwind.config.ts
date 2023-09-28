@@ -19,6 +19,7 @@ const config: Config = {
       boxShadow: {
         dark: "0 12px 35px 0px rgba(0, 0, 0, 0.25)", // Adjust color and opacity as needed
         pic: "10px 0px 35px 0px rgba(0, 0, 0, 0.3)",
+        logo: "0px 0px 35px 0px rgba(250, 200, 80, 0.25)",
       },
     },
   },
@@ -30,12 +31,17 @@ const config: Config = {
           primary: "#a991f7",
           secondary: "#f6d860",
           accent: "#37cdbe",
-          neutral: "#3d4451",
-          "base-100": "#ffffff",
+          neutral: "#030a11",
         },
       },
-      "dark",
-      "cupcake",
+      {
+        darktheme: {
+          primary: "#a991f7",
+          secondary: "#f6d860",
+          accent: "#37cdbe",
+          neutral: "#030a11",
+        },
+      },
     ],
   },
 };

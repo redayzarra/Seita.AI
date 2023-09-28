@@ -8,10 +8,9 @@ const Heading = () => {
   const userAccount = "captainamerica";
 
   return (
-    <div className="flex justify-between items-center mt-5 -mr-8">
+    <div className="flex justify-between items-center -mr-8">
       <div className="flex flex-col justify-between flex-grow">
-        <Logo />
-        <h2 className="text-lg mt-3 font-bold">{name}</h2>
+        <h2 className="text-lg font-bold">{name}</h2>
         <Link
           href={`https://www.instagram.com/${userAccount}/`}
           className="text-sm text-gray-600"

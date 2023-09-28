@@ -6,7 +6,7 @@ import Body from "./components/Body";
 const InstagramPage = () => {
   return (
     <div className="h-screen flex drawer lg:drawer-open">
-      <div className="w-56 bg-gray-200 shadow-dark z-10">
+      <div className="w-56 bg-neutral shadow-dark z-10">
         <SideBar />
       </div>
       <div className="flex flex-col flex-grow">
