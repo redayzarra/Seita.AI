@@ -17,8 +17,8 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       boxShadow: {
-        dark: "0 12px 35px 0px rgba(0, 0, 0, 0.25)", // Adjust color and opacity as needed
-        pic: "10px 0px 35px 0px rgba(0, 0, 0, 0.3)",
+        dark: "0 12px 35px 0px rgba(0, 0, 0, 0.5)", // Adjust color and opacity as needed
+        pic: "10px 0px 35px 0px rgba(0, 0, 0, 0.5)",
         logo: "0px 0px 35px 0px rgba(250, 200, 80, 0.25)",
       },
     },
@@ -31,15 +31,8 @@ const config: Config = {
           primary: "#a991f7",
           secondary: "#f6d860",
           accent: "#37cdbe",
-          neutral: "#030a11",
-        },
-      },
-      {
-        darktheme: {
-          primary: "#a991f7",
-          secondary: "#f6d860",
-          accent: "#37cdbe",
-          neutral: "#030a11",
+          neutral: "#202020",
+          "base-100": "#121212",
         },
       },
     ],
