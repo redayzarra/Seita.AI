@@ -27,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="mytheme">
-      <body className={poppins.className && gloock.variable}>{children}</body>
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }

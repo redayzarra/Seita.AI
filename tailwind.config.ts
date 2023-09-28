@@ -12,6 +12,7 @@ const config: Config = {
         gloock: "var(--font-gloock)",
       },
       backgroundImage: {
+        "gradient-onyx": "",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
