@@ -6,13 +6,15 @@ const ProfilePic = () => {
   const userName = "ReDay";
 
   return (
-    <div className="relative w-24 h-24 overflow-hidden shadow-pic rounded-full">
-      <Image
-        src={SteveRodgers}
-        alt={`${userName}'s Instagram profile picture`}
-        layout="fill"
-        objectFit="cover"
-      />
+    <div className="avatar online">
+      <div className="relative w-24 h-24 overflow-hidden shadow-pic rounded-full">
+        <Image
+          src={SteveRodgers}
+          alt={`${userName}'s Instagram profile picture`}
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
     </div>
   );
 };

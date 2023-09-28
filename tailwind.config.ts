@@ -15,11 +15,11 @@ const config: Config = {
       },
       boxShadow: {
         dark: "0 12px 35px 0px rgba(0, 0, 0, 0.25)", // Adjust color and opacity as needed
-        pic: "10px 0px 35px 0px rgba(0, 0, 0, 0.3)", 
+        pic: "10px 0px 35px 0px rgba(0, 0, 0, 0.3)",
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
 
 export default config;
