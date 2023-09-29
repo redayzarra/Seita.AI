@@ -5,12 +5,10 @@ import Logo from "./Logo";
 
 const SideBar = () => {
   return (
-    <div className="mt-3 min-w-[225px]">
+    <div className="pt-3 min-w-[225px] bg-neutral">
       <Logo />
-      <div className="ml-3 mb-1">
-        <Heading />
-      </div>
-      <div className="divider mx-2 -my-0"></div>
+      <Heading />
+      <div className="divider -mt-0 mx-3"></div>
     </div>
   );
 };

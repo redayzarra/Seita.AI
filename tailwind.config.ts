@@ -23,6 +23,7 @@ const config: Config = {
         logo: "0px 0px 35px 0px rgba(250, 200, 80, 0.25)",
       },
     },
+    backdropFilter: {},
   },
   plugins: [require("daisyui")],
   daisyui: {
@@ -32,8 +33,7 @@ const config: Config = {
           primary: "#a991f7",
           secondary: "#f6d860",
           accent: "#37cdbe",
-          neutral: "#202020",
-          "base-100": "#121212",
+          neutral: "#121212",
         },
       },
     ],
