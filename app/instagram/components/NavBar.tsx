@@ -1,9 +1,16 @@
-import React from 'react';
+import React from "react";
 
-const NavBar = () => {
-  return (
-    <div className='bg-slate-300'>NavBar</div>
-  )
+interface NavBarProps {
+  children?: React.ReactNode;
 }
+
+const NavBar: React.FC<NavBarProps> = ({ children }) => {
+  return (
+    <div className="bg-slate-400">
+      NavBar
+      {children}
+    </div>
+  );
+};
 
 export default NavBar;

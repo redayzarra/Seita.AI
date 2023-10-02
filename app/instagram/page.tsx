@@ -1,30 +1,44 @@
 import React from "react";
 import Grid from "@mui/joy/Grid";
-import Item from "./components/Item";
+import Body from "./components/Body";
+import NavBar from "./components/NavBar";
+import SideBar from "./components/SideBar";
 import DrawerButton from "./components/DrawerButton";
 
 const Instagram: React.FC = () => {
   return (
     <Grid container>
-      {/* Sidebar */}
-      <Grid xs={12} lg={3}>
-        <DrawerButton>
-          {/* Sidebar Content */}
-          Your Sidebar Content Here
-        </DrawerButton>
+      {/* Sidebar for Large Screens */}
+      <Grid component="div" lg={3} sx={{ display: { xs: "none", lg: "flex" } }}>
+        <SideBar />
       </Grid>
 
-      {/* Right side of the Sidebar */}
-      <Grid xs={12} lg={9}>
-        {/* Navigation Section */}
-        <Grid xs={12}>
-          {/* Other Navigation Items Visible on Large Screens */}
+      {/* Content Area */}
+      <Grid component="div" xs={12} lg={9}>
+        {/* Navigation Section for small screens */}
+        <Grid
+          component="div"
+          xs={12}
+          sx={{ display: { xs: "flex", lg: "none" } }}
+        >
+          <NavBar>
+            <DrawerButton>
+              <SideBar />
+            </DrawerButton>
+          </NavBar>
+        </Grid>
+        {/* Navigation Section for large screens */}
+        <Grid
+          component="div"
+          xs={12}
+          sx={{ display: { xs: "none", lg: "flex" } }}
+        >
+          <NavBar />
         </Grid>
 
         {/* Main Body Section */}
-        <Grid xs={12}>
-          {/* Your Main Body Content Here */}
-          <Item />
+        <Grid component="div" xs={12}>
+          <Body />
         </Grid>
       </Grid>
     </Grid>
