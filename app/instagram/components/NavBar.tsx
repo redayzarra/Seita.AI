@@ -6,9 +6,9 @@ interface NavBarProps {
 
 const NavBar: React.FC<NavBarProps> = ({ children }) => {
   return (
-    <div className="bg-slate-400">
-      NavBar
+    <div className="bg-slate-400 w-full flex justify-between">
       {children}
+      NavBar
     </div>
   );
 };
