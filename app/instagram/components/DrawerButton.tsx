@@ -26,6 +26,20 @@ const HamburgerIcon = () => (
   </svg>
 );
 
+const MenuClose = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+  >
+    <path
+      fill="currentColor"
+      d="M3 6h10v2H3V6m0 10h10v2H3v-2m0-5h12v2H3v-2m13-4l-1.42 1.39L18.14 12l-3.56 3.61L16 17l5-5l-5-5Z"
+    />
+  </svg>
+);
+
 const DrawerButton: React.FC<DrawerButtonProps> = ({ children }) => {
   const [open, setOpen] = useState(false);
 
@@ -35,14 +49,29 @@ const DrawerButton: React.FC<DrawerButtonProps> = ({ children }) => {
         variant="plain"
         color="neutral"
         onClick={() => setOpen(true)}
-        sx={{ display: { xs: "block", lg: "none" } }}
+        className="block lg:hidden" // Replace sx prop with Tailwind classes
       >
         <HamburgerIcon />
       </IconButton>
 
       <Drawer open={open} onClose={() => setOpen(false)}>
-        <ModalClose onClick={() => setOpen(false)} />
-        {children}
+        <div className="relative">
+          {" "}
+          {/* Replace inline style with Tailwind class */}
+          <IconButton
+            variant="plain"
+            onClick={() => setOpen(false)}
+            sx={{
+              position: "absolute",
+              top: "10px",
+              right: "10px",
+              zIndex: 10,
+            }}
+          >
+            <MenuClose />
+          </IconButton>
+          {children}
+        </div>
       </Drawer>
     </>
   );
