@@ -9,12 +9,16 @@ const Instagram: React.FC = () => {
   return (
     <Grid container>
       {/* Sidebar for Large Screens */}
-      <Grid component="div" lg={3} sx={{ display: { xs: "none", lg: "flex" } }}>
+      <Grid
+        component="div"
+        lg="auto"
+        sx={{ display: { xs: "none", lg: "flex" } }}
+      >
         <SideBar />
       </Grid>
 
       {/* Content Area */}
-      <Grid component="div" xs={12} lg={9}>
+      <Grid component="div" xs={2} sx={{ flexGrow: 1 }}>
         {/* Navigation Section for small screens */}
         <Grid
           component="div"
