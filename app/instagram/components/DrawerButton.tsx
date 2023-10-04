@@ -1,9 +1,8 @@
 "use client"; // Indicate this is a client component
 
-import React, { useState } from "react";
 import Drawer from "@mui/joy/Drawer";
 import IconButton from "@mui/joy/IconButton";
-import ModalClose from "@mui/joy/ModalClose";
+import React, { useState } from "react";
 
 interface DrawerButtonProps {
   children: React.ReactNode;
@@ -31,12 +30,21 @@ const MenuClose = () => (
     xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"
-    viewBox="0 0 24 24"
+    viewBox="0 0 48 48"
   >
-    <path
-      fill="currentColor"
-      d="M3 6h10v2H3V6m0 10h10v2H3v-2m0-5h12v2H3v-2m13-4l-1.42 1.39L18.14 12l-3.56 3.61L16 17l5-5l-5-5Z"
-    />
+    <mask id="ipTCloseOne0">
+      <g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4">
+        <path
+          fill="#555"
+          d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z"
+        />
+        <path
+          stroke-linecap="round"
+          d="M29.657 18.343L18.343 29.657m0-11.314l11.314 11.314"
+        />
+      </g>
+    </mask>
+    <path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTCloseOne0)" />
   </svg>
 );
 
@@ -45,12 +53,7 @@ const DrawerButton: React.FC<DrawerButtonProps> = ({ children }) => {
 
   return (
     <>
-      <IconButton
-        variant="plain"
-        color="neutral"
-        onClick={() => setOpen(true)}
-        className="block lg:hidden" // Replace sx prop with Tailwind classes
-      >
+      <IconButton variant="plain" color="neutral" onClick={() => setOpen(true)}>
         <HamburgerIcon />
       </IconButton>
 
