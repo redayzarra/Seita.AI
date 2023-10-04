@@ -12,7 +12,7 @@ const HamburgerIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="30px"
-    height="24px"
+    height="30px"
     viewBox="0 0 24 24"
   >
     <path
@@ -28,8 +28,8 @@ const HamburgerIcon = () => (
 const MenuClose = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width="30px"
+    height="30px"
     viewBox="0 0 48 48"
   >
     <mask id="ipTCloseOne0">
@@ -53,17 +53,18 @@ const DrawerButton: React.FC<DrawerButtonProps> = ({ children }) => {
 
   return (
     <>
-      <IconButton variant="plain" color="neutral" onClick={() => setOpen(true)}>
+      <IconButton variant="plain" size="lg" color="neutral" onClick={() => setOpen(true)}>
         <HamburgerIcon />
       </IconButton>
 
-      <Drawer open={open} onClose={() => setOpen(false)}>
+      <Drawer open={open} onClose={() => setOpen(false)} size="sm">
         <div className="relative">
           {" "}
           {/* Replace inline style with Tailwind class */}
           <IconButton
             variant="plain"
             onClick={() => setOpen(false)}
+            size="sm"
             sx={{
               position: "absolute",
               top: "10px",

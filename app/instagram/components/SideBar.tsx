@@ -1,11 +1,13 @@
-import React from 'react'
+import Logo from "@/app/components/Logo";
+import React from "react";
 
 const SideBar = () => {
   return (
-    <div className="bg-gray-700 w-full">
-      Lorem ipsum dolor sit amet.
+    <div className="p-2 h-screen border-dashed bg-gradient-to-b from-start-color to-end-color w-[256px]">
+      <Logo />
+      SideBar
     </div>
-  )
-}
+  );
+};
 
-export default SideBar
+export default SideBar;

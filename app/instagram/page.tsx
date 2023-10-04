@@ -7,45 +7,48 @@ import DrawerButton from "./components/DrawerButton";
 
 const Instagram: React.FC = () => {
   return (
-    <Grid container>
-      {/* Sidebar for Large Screens */}
-      <Grid
-        component="div"
-        lg="auto"
-        sx={{ display: { xs: "none", lg: "flex" } }}
-      >
-        <SideBar />
-      </Grid>
+    <div className="bg-gradient-to-b from-start-color to-end-color">
 
-      {/* Content Area */}
-      <Grid component="div" xs={2} sx={{ flexGrow: 1 }}>
-        {/* Navigation Section for small screens */}
+      <Grid container>
+        {/* Sidebar for medium Screens */}
         <Grid
           component="div"
-          xs={12}
-          sx={{ display: { xs: "flex", lg: "none" } }}
+          lg="auto"
+          sx={{ display: { xs: "none", md: "flex" } }}
         >
-          <NavBar>
-            <DrawerButton>
-              <SideBar />
-            </DrawerButton>
-          </NavBar>
-        </Grid>
-        {/* Navigation Section for large screens */}
-        <Grid
-          component="div"
-          xs={12}
-          sx={{ display: { xs: "none", lg: "flex" } }}
-        >
-          <NavBar />
+          <SideBar />
         </Grid>
 
-        {/* Main Body Section */}
-        <Grid component="div" xs={12}>
-          <Body />
+        {/* Content Area */}
+        <Grid component="div" xs={2} sx={{ flexGrow: 1 }}>
+          {/* Navigation Section for small screens */}
+          <Grid
+            component="div"
+            xs={12}
+            sx={{ display: { xs: "flex", md: "none" } }}
+          >
+            <NavBar>
+              <DrawerButton>
+                <SideBar />
+              </DrawerButton>
+            </NavBar>
+          </Grid>
+          {/* Navigation Section for medium screens */}
+          <Grid
+            component="div"
+            xs={12}
+            sx={{ display: { xs: "none", md: "flex" } }}
+          >
+            <NavBar />
+          </Grid>
+
+          {/* Main Body Section */}
+          <Grid component="div" xs={12}>
+            <Body />
+          </Grid>
         </Grid>
       </Grid>
-    </Grid>
+    </div>
   );
 };
 
