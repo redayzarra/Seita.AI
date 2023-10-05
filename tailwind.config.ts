@@ -17,6 +17,13 @@ const config: Config = {
         "start-color": "#121212",
         "end-color": "#2C2C2C",
       },
+      colors: {
+        background: "#121212",
+        component: {
+          light: "#2C2C2C",
+          dark: "#121212",
+        },
+      },
     },
   },
   plugins: [],

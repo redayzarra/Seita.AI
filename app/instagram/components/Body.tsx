@@ -1,8 +1,10 @@
-import React from "react";
+import ExploreTabs from "./ExploreTabs";
 
 const Body = () => {
   return (
-    <div className="h-screen bg-gray-300">Body</div>
+    <div className="h-screen bg-gray-300">
+      <ExploreTabs />
+    </div>
   );
 };
 
