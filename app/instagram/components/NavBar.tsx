@@ -1,3 +1,4 @@
+import Logo from "@/app/components/Logo";
 import React from "react";
 
 interface NavBarProps {

@@ -7,14 +7,14 @@ import DrawerButton from "./components/DrawerButton";
 
 const Instagram: React.FC = () => {
   return (
-    <div className="bg-background">
+    <div className="bg-gradient-radial from-start-color to-end-color">
 
       <Grid container>
-        {/* Sidebar for medium Screens */}
+        {/* Sidebar for large Screens */}
         <Grid
           component="div"
           lg="auto"
-          sx={{ display: { xs: "none", md: "flex" } }}
+          sx={{ display: { xs: "none", lg: "flex" } }}
         >
           <SideBar />
         </Grid>
@@ -25,7 +25,7 @@ const Instagram: React.FC = () => {
           <Grid
             component="div"
             xs={12}
-            sx={{ display: { xs: "flex", md: "none" } }}
+            sx={{ display: { xs: "flex", lg: "none" } }}
           >
             <NavBar>
               <DrawerButton>
@@ -33,11 +33,11 @@ const Instagram: React.FC = () => {
               </DrawerButton>
             </NavBar>
           </Grid>
-          {/* Navigation Section for medium screens */}
+          {/* Navigation Section for large screens */}
           <Grid
             component="div"
             xs={12}
-            sx={{ display: { xs: "none", md: "flex" } }}
+            sx={{ display: { xs: "none", lg: "flex" } }}
           >
             <NavBar />
           </Grid>

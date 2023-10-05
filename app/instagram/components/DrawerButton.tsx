@@ -28,23 +28,14 @@ const HamburgerIcon = () => (
 const MenuClose = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="30px"
-    height="30px"
-    viewBox="0 0 48 48"
+    width="30"
+    height="30"
+    viewBox="0 0 256 256"
   >
-    <mask id="ipTCloseOne0">
-      <g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4">
-        <path
-          fill="#555"
-          d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z"
-        />
-        <path
-          stroke-linecap="round"
-          d="M29.657 18.343L18.343 29.657m0-11.314l11.314 11.314"
-        />
-      </g>
-    </mask>
-    <path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTCloseOne0)" />
+    <path
+      fill="currentColor"
+      d="M205.66 194.34a8 8 0 0 1-11.32 11.32L128 139.31l-66.34 66.35a8 8 0 0 1-11.32-11.32L116.69 128L50.34 61.66a8 8 0 0 1 11.32-11.32L128 116.69l66.34-66.35a8 8 0 0 1 11.32 11.32L139.31 128Z"
+    />
   </svg>
 );
 
@@ -53,15 +44,24 @@ const DrawerButton: React.FC<DrawerButtonProps> = ({ children }) => {
 
   return (
     <>
-      <IconButton variant="plain" size="lg" color="neutral" onClick={() => setOpen(true)}>
+      <IconButton
+        variant="plain"
+        size="lg"
+        onClick={() => setOpen(true)}
+        sx={{
+          color: "#cbd5e1",
+          "&:hover": {
+            backgroundColor: "transparent",
+            color: "#475569",
+          },
+        }}
+      >
         <HamburgerIcon />
       </IconButton>
 
       <Drawer open={open} onClose={() => setOpen(false)} size="sm">
         <div className="relative">
-          {" "}
-          {/* Replace inline style with Tailwind class */}
-          <IconButton
+          {/* <IconButton
             variant="plain"
             onClick={() => setOpen(false)}
             size="sm"
@@ -70,10 +70,15 @@ const DrawerButton: React.FC<DrawerButtonProps> = ({ children }) => {
               top: "10px",
               right: "10px",
               zIndex: 10,
+              color: "#cbd5e1",
+              "&:hover": {
+                backgroundColor: "transparent",
+                color: "#475569",
+              },
             }}
           >
             <MenuClose />
-          </IconButton>
+          </IconButton> */}
           {children}
         </div>
       </Drawer>

@@ -15,7 +15,7 @@ const config: Config = {
       },
       gradientColorStops: {
         "start-color": "#161c24",
-        "end-color": "#2C2C2C",
+        "end-color": "#121212",
       },
       colors: {
         background: "#161c24",
