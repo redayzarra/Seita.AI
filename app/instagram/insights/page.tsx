@@ -1,10 +1,10 @@
-import React from "react";
 import Grid from "@mui/joy/Grid";
 import Body from "../components/Body";
 import DrawerButton from "../components/navbar/DrawerButton";
-import HiddenSideBar from "../components/sidebar/HiddenSideBar";
 import NavBar from "../components/navbar/NavBar";
-import SideBar from "../components/sidebar/SideBar";
+import LargeSideBar from "../components/sidebar/Large";
+import SideBar from "../components/sidebar/Sidebar";
+import HiddenSideBar from "../components/sidebar/Hidden";
 
 const Insights = () => {
   return (
@@ -16,7 +16,7 @@ const Insights = () => {
           lg="auto"
           sx={{ display: { xs: "none", lg: "flex" } }}
         >
-          <SideBar />
+          <LargeSideBar />
         </Grid>
 
         {/* Content Area */}
