@@ -1,4 +1,4 @@
-import ExploreTabs from "./ExploreTabs";
+import ExploreTabs from "./archive/ExploreTabs";
 
 const Body = () => {
   return (

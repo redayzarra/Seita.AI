@@ -1,15 +1,14 @@
 import React from "react";
 import Grid from "@mui/joy/Grid";
 import Body from "../components/Body";
-import DrawerButton from "../components/DrawerButton";
-import HiddenSideBar from "../components/HiddenSideBar";
-import NavBar from "../components/NavBar";
-import SideBar from "../components/SideBar";
+import DrawerButton from "../components/navbar/DrawerButton";
+import HiddenSideBar from "../components/sidebar/HiddenSideBar";
+import NavBar from "../components/navbar/NavBar";
+import SideBar from "../components/sidebar/SideBar";
 
-const Insights: React.FC = () => {
+const Insights = () => {
   return (
     <div className="bg-gradient-radial from-start-color to-end-color">
-
       <Grid container>
         {/* Sidebar for large Screens */}
         <Grid
