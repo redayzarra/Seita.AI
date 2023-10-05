@@ -14,14 +14,14 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       gradientColorStops: {
-        "start-color": "#121212",
+        "start-color": "#161c24",
         "end-color": "#2C2C2C",
       },
       colors: {
-        background: "#121212",
+        background: "#161c24",
         component: {
           light: "#2C2C2C",
-          dark: "#121212",
+          dark: "#212b36",
         },
       },
     },

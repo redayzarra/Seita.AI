@@ -7,7 +7,7 @@ import DrawerButton from "./components/DrawerButton";
 
 const Instagram: React.FC = () => {
   return (
-    <div className="bg-gradient-to-b from-start-color to-end-color">
+    <div className="bg-background">
 
       <Grid container>
         {/* Sidebar for medium Screens */}

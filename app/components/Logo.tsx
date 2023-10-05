@@ -7,7 +7,7 @@ const Logo = () => {
   return (
     <div className="flex items-center justify-center flex-grow">
       <Link href="/">
-        <Image src={SeitaLogo} alt="Seita company logo" width={100} />
+        <Image src={SeitaLogo} alt="Seita company logo" width={75} />
       </Link>
     </div>
   );

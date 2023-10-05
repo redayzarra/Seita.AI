@@ -5,7 +5,7 @@ import Tab from "@mui/joy/Tab";
 
 const ExploreTabs = () => {
   return (
-    <div className="inline-block">
+    <div className="inline-block shadow-xl">
       <Tabs aria-label="tabs" defaultValue={0} sx={{ bgcolor: "transparent" }}>
         <TabList
           disableUnderline
@@ -13,14 +13,14 @@ const ExploreTabs = () => {
             p: 0.5,
             gap: 0.5,
             borderRadius: "xl",
-            bgcolor: "#121212",
+            bgcolor: "#212b36",
             "& .MuiTab-root": {
-              color: "#aaa", // default font color for non-selected tabs
+              color: "#e2e8f0", // default font color for non-selected tabs
             },
             "& .Mui-selected": {
               fontWeight: "bold",
-              color: "#fff",
-              bgcolor: "#2d2d2d",
+              color: "#e2e8f0",
+              bgcolor: "#161c24",
             },
           }}
         >
