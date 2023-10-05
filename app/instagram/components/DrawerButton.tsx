@@ -52,7 +52,7 @@ const DrawerButton: React.FC<DrawerButtonProps> = ({ children }) => {
           color: "#cbd5e1",
           "&:hover": {
             backgroundColor: "transparent",
-            color: "#475569",
+            color: "#d97706",
           },
         }}
       >

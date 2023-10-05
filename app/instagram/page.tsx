@@ -4,6 +4,7 @@ import Body from "./components/Body";
 import NavBar from "./components/NavBar";
 import SideBar from "./components/SideBar";
 import DrawerButton from "./components/DrawerButton";
+import HiddenSideBar from "./components/HiddenSideBar";
 
 const Instagram: React.FC = () => {
   return (
@@ -29,7 +30,7 @@ const Instagram: React.FC = () => {
           >
             <NavBar>
               <DrawerButton>
-                <SideBar />
+                <HiddenSideBar />
               </DrawerButton>
             </NavBar>
           </Grid>

@@ -21,7 +21,7 @@ const config: Config = {
         background: "#161c24",
         component: {
           light: "#2C2C2C",
-          dark: "#212b36",
+          dark: "#141518",
         },
       },
     },
