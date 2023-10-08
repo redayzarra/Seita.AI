@@ -8,7 +8,7 @@ import HiddenSideBar from "../components/sidebar/Hidden";
 
 const Insights = () => {
   return (
-    <div className="bg-gradient-radial from-start-color to-end-color">
+    <div className="">
       <Grid container>
         {/* Sidebar for large Screens */}
         <Grid

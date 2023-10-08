@@ -20,7 +20,11 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <ThemeRegistry options={{ key: "joy" }}>{children}</ThemeRegistry>
+        <ThemeRegistry options={{ key: "joy" }}>
+          <div className="h-screen bg-gradient-radial from-start-color to-end-color">
+            {children}
+          </div>
+        </ThemeRegistry>
       </body>
     </html>
   );
